@@ -1,11 +1,11 @@
 # A Test Package For ROS Dynamic Reconfigure
 
-When serialising parameter descriptions on arm release builds, and config message with multiple 
-parameters of the same type is serialised to a much bigger size than required.
+When serialising parameter descriptions on arm release builds, any config message with multiple 
+parameters of the same type are serialised to a much bigger size than required.
 
 The example included in this package **ExampleBroken.cfg** parameter description message serialises to over 
-600MB on ARM in release. The parameter object appears to behave in all other respects, but this is difficult 
-to confirm as the issue on occours in ARM release builds.
+600MB on ARM in release. The parameter description object appears to behave in all other respects, but this is difficult 
+to confirm as the issue on occurs in ARM release builds.
 
 |Language | Arch | Build | Serialised Bytes | Deserialised Message |
 | ------ | ------ | ------ | ------ | ------ |
@@ -40,7 +40,7 @@ rosrun dynamic_test dynamic_test_node
 rosrun dynamic_test dynamic_test_broken_node
 ```
 
-### Example Tests Are Provided
+### Example Tests Provided
 Must be built on ARM in release to recreate
 
 `catkin_make run_tests -DCMAKE_BUILD_TYPE=Release dynamic_test`
