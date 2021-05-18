@@ -12,9 +12,6 @@ void callback(Config &config, uint32_t level) {
 }
 
 
-// Void height is used because this is easy for a human to measure and enter
-// Most use cases will subtract the clearance height from the void height, giving the height from the chassis (base_link) to ceiling
-// This "spray height" will be used by kinematics and transforms, as they all transform from the base_link (rather than the base_footprint)
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "test_node");
