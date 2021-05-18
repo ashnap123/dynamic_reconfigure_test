@@ -1,4 +1,4 @@
-#A Test Package For ROS Dynamic Reconfigure
+# A Test Package For ROS Dynamic Reconfigure
 
 When serialising parameter descriptions on arm release builds, and config message with multiple 
 parameters of the same type is serialised to a much bigger size than required.
