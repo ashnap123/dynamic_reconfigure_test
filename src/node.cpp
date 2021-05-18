@@ -20,10 +20,10 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "test_node");
 
     dynamic_reconfigure::Server<Config> server;
-    dynamic_reconfigure::Server<Config>::CallbackType heightChangedCallback;
+    dynamic_reconfigure::Server<Config>::CallbackType reconfigureCallback;
 
-    heightChangedCallback = boost::bind(&callback, _1, _2);
-    server.setCallback(heightChangedCallback);
+    reconfigureCallback = boost::bind(&callback, _1, _2);
+    server.setCallback(reconfigureCallback);
 
     ros::spin();
     return 0;
