@@ -4,7 +4,6 @@
 #include <dynamic_test/ExampleConfig.h>
 
 
-const ros::Duration TIMEOUT_CLEARANCE_HEIGHT(10);
 typedef dynamic_test::ExampleConfig Config;
 
 void callback(Config &config, uint32_t level) {

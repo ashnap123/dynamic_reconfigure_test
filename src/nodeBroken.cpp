@@ -1,11 +1,9 @@
 #include <ros/ros.h>
-#include <ros/serialization.h>
 
 #include <dynamic_reconfigure/server.h>
 #include <dynamic_test/ExampleBrokenConfig.h>
 
 
-const ros::Duration TIMEOUT_CLEARANCE_HEIGHT(10);
 typedef dynamic_test::ExampleBrokenConfig Config;
 
 void callback(Config &config, uint32_t level) {
